@@ -6,8 +6,8 @@ import Seo from '../../components/seo'
 const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-    <p>{data.mdx.frontmatter.date}</p>
-    {children}
+      <p>{data.mdx.frontmatter.date}</p>
+      {children}
     </Layout>
   )
 }
