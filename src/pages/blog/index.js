@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { Link, graphql } from 'gatsby'
-import Layout from '../../components/layout'
-import Seo from '../../components/seo'
+import * as React from 'react';
+import { Link, graphql } from 'gatsby';
+import Layout from '../../components/layout';
+import Seo from '../../components/seo';
 
 const BlogPage = ({ data }) => {
   return (
@@ -16,6 +16,7 @@ const BlogPage = ({ data }) => {
             </h2>
             <p>Posted: {node.frontmatter.date}</p>
             <p>{node.excerpt}</p>
+            <Link to="/">Back to Home</Link>
           </article>
         ))
       }
